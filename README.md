@@ -12,7 +12,7 @@ Open the Shader-Editor and click "Add > Input > Attribute."
 
 Add the name of the plot's Vector-Color to the attribute (it should be "Col" by default).
 
-Connect the attribute's "Vector" to the Diffuse BSDF "Color."
+Connect the attribute's "Vector" to the Diffuse BSDF's "Color."
 
 Then, with cursor over the plot, type "z" and select "Material Preview." The plot should appear in color!
 
