@@ -10,7 +10,7 @@ To see color, add a material-property whose Surface is "Diffuse BSDF."
 
 Open the Shader-Editor and click Add > Input > Attribute.
 
-The name of the attribute should be "Col" by default.
+Add name of the plot's Vector-Color to the attribute (it should be "Col" by default).
 
 Connect the attribute's "Vector" to the Diffuse BSDF "Color."
 
