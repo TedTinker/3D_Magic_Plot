@@ -18,4 +18,4 @@ Then, with cursor over the plot, type "Z" and select "Material Preview." The plo
 
 Press Shift + \` to enter fly-mode, navigating with WASD, Q, and E. 
 
-Make_3D_plot.R, when run, will reproduce the 3D plot with RGL and export it as a PLY-file.
+Running make_3D_plot.R will reproduce the 3D plot with RGL and export it as a PLY-file.
