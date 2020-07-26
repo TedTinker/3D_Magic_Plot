@@ -14,8 +14,8 @@ Add name of the plot's Vector-Color to the attribute (it should be "Col" by defa
 
 Connect the attribute's "Vector" to the Diffuse BSDF "Color."
 
-Then, with cursor over the plot, type "Z" and select "Material Preview." The plot should appear in color!
+Then, with cursor over the plot, type "z" and select "Material Preview." The plot should appear in color!
 
-Press Shift + \` to enter fly-mode, navigating with WASD, Q, and E. 
+Press Shift + \` to enter fly-mode, navigating with wasd, q, and e. 
 
 Running make_3D_plot.R will reproduce the 3D plot with RGL and export it as a PLY-file.
