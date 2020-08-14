@@ -1,6 +1,7 @@
 # 3D_Magic_Plot
 A 3D plot of Magic: The Gathering cards by power, toughness, mana-cost, and color, and the R-Script which produced it.
 The dataset in use is the AllPrintings JSON-file from mtgjson.com.
+There's a video about this plot here: https://www.youtube.com/watch?v=RcoYURBZGp0
 
 RGL.ply is a file which can be imported into Blender with "File > Import > Stanford (.ply)."
 
