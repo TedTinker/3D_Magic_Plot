@@ -2,7 +2,7 @@ library(jsonlite)
 library(dplyr)
 
 # "AllPrintings" from mtgjson.com.
-mtg_cards <- fromJSON("AllCards.json")
+mtg_cards <- fromJSON(readLines("AllCards.json"))
 
 columns_of_interest = c(
   "Name",
