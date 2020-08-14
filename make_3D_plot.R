@@ -1,6 +1,3 @@
-# Set this to your own data-folder.
-setwd("C://Users//tedjt//Desktop//Thinkster//43 MTG 3D//code")
-
 library(jsonlite)
 library(dplyr)
 
