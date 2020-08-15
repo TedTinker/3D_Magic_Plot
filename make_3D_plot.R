@@ -21,6 +21,7 @@ columns = length(columns_of_interest)
 mtg_matrix <- matrix(ncol = columns, nrow = rows)
 colnames(mtg_matrix) <- columns_of_interest
 
+# Iterate over JSON file to make a matrix
 i = 1
 
 for (card in mtg_cards) {
@@ -65,8 +66,10 @@ for (card in mtg_cards) {
   i = i + 1
 }
 
+# Remove empty rows
 mtg_matrix <- mtg_matrix[rowSums(is.na(mtg_matrix)) != ncol(mtg_matrix), ]
 
+# Make it a dataframe
 mtg_df <- data.frame(mtg_matrix, stringsAsFactors = FALSE)
 mtg_df$White <- as.numeric(as.character(mtg_df$White))
 mtg_df$Blue <- as.numeric(as.character(mtg_df$Blue))
@@ -171,14 +174,6 @@ for (i in 1:nrow(cpt_df)) {
   cpt_df[i,"Toughness"] = cpt_df[i,"Toughness"] + edit_t
 }
 
-cpt_df <- rbind(
-    cpt_df[cpt_df$Color == "White",],
-    cpt_df[cpt_df$Color == "Blue",],
-    cpt_df[cpt_df$Color == "Black",],
-    cpt_df[cpt_df$Color == "Red",],
-    cpt_df[cpt_df$Color == "DarkGreen",],
-    cpt_df[cpt_df$Color == "Yellow",]
-)
 
 ##### Now plot it in 3D
 library(rgl)
