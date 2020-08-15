@@ -15,3 +15,4 @@ Then, with cursor over the plot, type "z" and select "Material Preview." The plo
 Press "shift + \`" to enter fly-mode, navigating with "w," "a," "s," "d," "q,", and "e." 
 
 Running make_3D_plot.R will reproduce the 3D plot with RGL and export it as a PLY-file.
+Running make_2D_plot.R will make a 2D plot of power, toughness, and color. 
